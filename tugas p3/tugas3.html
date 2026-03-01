@@ -1,0 +1,45 @@
+<!---"saya mengerjakan tugas ini sendiri tanpa melakukan kecurangan seperti menggunakan, 
+menduplikasi kode perogram kode program yang ada. 
+jia saya melakukan kecurangan dalam pemgerjaan tugas ini maka saya siap menerima 
+sanksi atau hukuman dari dari dosen mata kuliah dan allah swt"-->
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preferensi Warna</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="mainBody">
+
+    <h1>Preferensi Warna</h1>
+
+    <fieldset>
+        <legend>Warna</legend>
+        <ol>
+            <li>
+                Warna latarbelakang 
+                <input type="color" id="bgPicker" value="#3b6299">
+            </li>
+            <li>
+                Warna teks 
+                <input type="color" id="textPicker" value="#cc0000">
+            </li>
+        </ol>
+    </fieldset>
+
+    <button type="button" onclick="applyPreferences()">Simpan</button>
+
+    <script>
+        function applyPreferences() {
+            const bgColor = document.getElementById('bgPicker').value;
+            const textColor = document.getElementById('textPicker').value;
+            document.body.style.backgroundColor = bgColor;
+            document.body.style.color = textColor;
+
+            alert("Preferensi warna telah disimpan!");
+        }
+    </script>
+</body>
+</html>
