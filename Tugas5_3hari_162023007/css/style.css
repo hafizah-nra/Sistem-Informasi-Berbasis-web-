@@ -1,0 +1,108 @@
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 350px;
+}
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    text-decoration: underline wavy #333;
+    text-underline-offset: 5px;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 14px;
+}
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+.btn-submit {
+    width: 100%;
+    padding: 10px;
+    background-color: #4b6cb7;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.btn-submit:hover {
+    background-color: #3b5998;
+}
+.nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    background-color: #000;
+    border-radius: 3px;
+    overflow: hidden;
+}
+.nav-buttons a {
+    flex: 1;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 12px;
+    font-weight: bold;
+}
+.nav-buttons a:hover {
+    background-color: #333;
+}
+.msg {
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 13px;
+    border-radius: 3px;
+}
+.msg.error {
+    color: red;
+    border: 1px solid red;
+}
+.msg.success {
+    color: green;
+    border: 1px solid green;
+}
+
+.data-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    background: #fafafa;
+    margin-bottom: 5px;
+}
+.data-info span { display: block; }
+.data-name { font-weight: bold; font-size: 14px;}
+.data-email { font-size: 12px; color: #666; font-style: italic;}
+.btn-edit, .btn-delete {
+    padding: 5px 10px;
+    color: white;
+    text-decoration: none;
+    border-radius: 3px;
+    font-size: 12px;
+}
+.btn-edit { background-color: #28a745; }
+.btn-delete { background-color: #dc3545; }
